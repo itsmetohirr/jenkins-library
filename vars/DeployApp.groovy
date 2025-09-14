@@ -6,7 +6,7 @@ def call(Map config = [:]) {
     pipeline {
         agent any
         stages {
-            stage("Deploy ${appName}") {
+            stage("Deploy") {
                 steps {
                     script {
                         sh """
